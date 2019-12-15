@@ -13,9 +13,8 @@ export class AppComponent  {
 
 cars: Car[];
 
-constructor (private transportationService: TransportationService) {
+  constructor (private transportationService: TransportationService) {
   this.cars = this.transportationService.getCars();
-}
-
-
+  }
+  
 }
